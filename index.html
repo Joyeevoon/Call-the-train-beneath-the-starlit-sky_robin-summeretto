@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>星穹列车 · Honkai: Star Rail</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="stage" aria-label="流星雨落入水面的夜空，点击召唤星穹列车"></main>
+<header class="mark">
+  <span class="mark__title">星穹列车</span>
+  <span class="mark__sub">Honkai: Star Rail</span>
+</header>
+<p id="hint" class="hint">点击夜空 · 召唤列车</p>
+<div id="loading" class="loading">
+  <div class="loading__box">
+    <span class="loading__text">星穹铺设中…</span>
+    <div class="loading__bar"><i id="loadingFill"></i></div>
+  </div>
+</div>
+<button id="musicBtn" class="ctl" type="button" aria-label="音乐开关" hidden>
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path class="ic-on" d="M4 9h3l5-4v14l-5-4H4z" fill="currentColor"/><path class="ic-on" d="M16 8.5a4.5 4.5 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="ic-on" d="M18.5 6a8 8 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="ic-off" d="M4 9h3l5-4v14l-5-4H4z" fill="currentColor"/><path class="ic-off" d="M16.5 9.5l5 5m0-5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <span class="ctl__sr" id="musicLabel">音乐：开</span>
+</button>
+<button id="replayBtn" class="ctl ctl--icon" type="button" aria-label="重玩一次" hidden>
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+    <path d="M12 5a7 7 0 1 1-6.32 4H3.5L7 4.5 10.5 9H7.9A5 5 0 1 0 12 7z" fill="currentColor" transform="translate(1.2 1.2) scale(0.9)"/>
+  </svg>
+</button>
+<audio id="bgm" src="assets/bgm.mp3" preload="auto" loop></audio>
+<script src="lib/p5.min.js"></script>
+<script src="sketch.js"></script>
+</body>
+</html>
